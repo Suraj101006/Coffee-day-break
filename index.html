@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daybreak Coffee Co. – Small-lot coffee, roasted every Tuesday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sun" viewBox="0 0 32 32"><circle cx="16" cy="16" r="7" fill="currentColor"/><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M16 2v4M16 26v4M2 16h4M26 16h4M6 6l3 3M23 23l3 3M26 6l-3 3M9 23l-3 3"/></g></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Daybreak Coffee Co. home"><svg aria-hidden="true"><use href="#sun"/></svg>Daybreak</a>
+    <ul class="links" id="links">
+      <li><a href="#home" data-n="home">Home</a></li>
+      <li><a href="#origins" data-n="origins">Origins</a></li>
+      <li><a href="#story" data-n="story">Roastery</a></li>
+      <li><a href="#brew" data-n="brew">Brew guide</a></li>
+      <li><a href="#shop" data-n="shop">Shop</a></li>
+    </ul>
+    <div class="nav-r">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="lbl">Cart</span><span class="badge" id="badge">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="home" aria-label="Welcome">
+  <svg class="hero-bg" id="heroBg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs><radialGradient id="glow"><stop offset="0" stop-color="#FFE3B0" stop-opacity=".95"/><stop offset="1" stop-color="#FFE3B0" stop-opacity="0"/></radialGradient></defs>
+    <g fill="#fff"><circle cx="120" cy="80" r="1.6"/><circle cx="260" cy="150" r="1.2"/><circle cx="410" cy="60" r="1.8"/><circle cx="590" cy="120" r="1.2"/><circle cx="780" cy="50" r="1.5"/><circle cx="930" cy="140" r="1.1"/><circle cx="1100" cy="70" r="1.7"/><circle cx="1250" cy="160" r="1.2"/><circle cx="1360" cy="90" r="1.5"/></g>
+    <circle cx="720" cy="580" r="360" fill="url(#glow)"/><circle cx="720" cy="580" r="112" fill="#FFE4B5"/>
+    <path fill="#6B4F70" d="M0 560C120 520 200 470 320 500C440 530 520 440 640 450C780 462 840 520 980 490C1100 465 1200 420 1320 470C1380 492 1420 510 1440 520V900H0Z"/>
+    <path fill="#44435F" d="M0 650C100 610 180 550 300 590L420 530C520 570 620 610 740 570C860 530 940 570 1060 610C1180 650 1300 570 1440 610V900H0Z"/>
+    <path fill="#27423F" d="M0 730C140 670 240 650 360 690C480 730 560 650 700 660C840 670 920 740 1060 710C1200 680 1320 660 1440 710V900H0Z"/>
+    <path fill="#173129" d="M0 795C160 745 300 765 440 785C580 805 700 745 860 755C1020 765 1160 815 1300 785C1370 770 1410 775 1440 780V900H0Z"/>
+    <path fill="#0F211C" d="M0 855C240 828 480 846 720 840C960 834 1200 820 1440 850V900H0Z"/>
+    <g id="shrubG"></g>
+  </svg>
+  <div class="wrap hero-copy">
+    <h1>Coffee worth waking up for.</h1>
+    <p class="sub">Small-lot beans from three highland farms, roasted every Tuesday and on your doorstep within 48 hours.</p>
+    <div class="cta"><a class="btn btn-primary" href="#shop">Shop this week's roast</a><a class="btn btn-ghost" href="#brew">Dial in your brew</a></div>
+  </div>
+</section>
+
+<section id="origins" class="pad">
+  <div class="wrap">
+    <h2 class="h2">Three highlands, three very different cups</h2>
+    <p class="lead">We buy directly from the same farms every season, so you can taste how altitude, soil and process change what's in the cup.</p>
+    <div class="grid3">
+      <article class="origin">
+        <div class="o-art" style="background:linear-gradient(180deg,#F7C98B,#E58C6B)"><svg viewBox="0 0 400 240" preserveAspectRatio="none" aria-hidden="true"><circle cx="300" cy="70" r="30" fill="#FFF0CC"/><path d="M0 170C60 120 110 100 170 140C220 175 270 90 330 110C370 124 390 140 400 150V240H0Z" fill="#B65A55"/><path d="M0 205C70 170 140 180 200 195C270 212 330 175 400 190V240H0Z" fill="#6F2F45"/></svg></div>
+        <div class="o-body"><h3>Guji Sunrise</h3><p class="meta">Ethiopia · 2,100 m · Washed</p>
+          <ul class="notes"><li>Peach</li><li>Jasmine</li><li>Black tea</li></ul>
+          <div class="roast"><small>Light roast</small><div class="meter"><i style="width:30%"></i></div></div></div>
+      </article>
+      <article class="origin">
+        <div class="o-art" style="background:linear-gradient(180deg,#BFD9C2,#6FA384)"><svg viewBox="0 0 400 240" preserveAspectRatio="none" aria-hidden="true"><circle cx="90" cy="64" r="26" fill="#F4F3D2"/><path d="M0 160C50 110 100 90 150 120C210 156 250 70 310 90C350 104 380 120 400 140V240H0Z" fill="#3E7A62"/><path d="M0 205C70 170 140 180 200 195C270 212 330 175 400 190V240H0Z" fill="#1F4A3B"/></svg></div>
+        <div class="o-body"><h3>Huila Panela</h3><p class="meta">Colombia · 1,750 m · Honey</p>
+          <ul class="notes"><li>Red apple</li><li>Brown sugar</li><li>Cocoa</li></ul>
+          <div class="roast"><small>Medium roast</small><div class="meter"><i style="width:58%"></i></div></div></div>
+      </article>
+      <article class="origin">
+        <div class="o-art" style="background:linear-gradient(180deg,#8FA0C9,#4E5B8A)"><svg viewBox="0 0 400 240" preserveAspectRatio="none" aria-hidden="true"><circle cx="320" cy="60" r="24" fill="#E9E6FF"/><path d="M0 150C70 100 120 80 190 125C240 156 290 80 350 100C380 110 395 124 400 130V240H0Z" fill="#37406A"/><path d="M0 205C70 170 140 180 200 195C270 212 330 175 400 190V240H0Z" fill="#1E2444"/></svg></div>
+        <div class="o-body"><h3>Lintong Cedar</h3><p class="meta">Sumatra · 1,400 m · Wet-hulled</p>
+          <ul class="notes"><li>Cedar</li><li>Dark chocolate</li><li>Tobacco leaf</li></ul>
+          <div class="roast"><small>Dark roast</small><div class="meter"><i style="width:88%"></i></div></div></div>
+      </article>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>12</b><span>partner farms we visit every year</span></div>
+      <div class="stat"><b>48 h</b><span>from roaster to your door</span></div>
+      <div class="stat"><b>100%</b><span>compostable packaging</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="story pad">
+  <div class="wrap story-grid">
+    <div>
+      <h2 class="h2">Roasted in small batches, on Tuesdays only</h2>
+      <p class="lead">Coffee is at its best in the first few weeks after roasting. So we roast once a week, pack the same day and ship straight away. No warehouse shelf in between.</p>
+      <ul>
+        <li>Every bag carries the roast date, not a vague best-before.</li>
+        <li>Roasts are profiled by hand and tasted blind before they go on sale.</li>
+        <li>Farmers get paid above the fair-trade floor, and we publish the price.</li>
+      </ul>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <svg viewBox="0 0 400 360">
+        <g fill="none" stroke="#F2E8D8" stroke-width="5" stroke-linecap="round" opacity=".7"><path d="M160 120C140 90 180 70 160 40"/><path d="M200 126C176 90 224 66 200 30"/><path d="M240 120C220 90 260 70 240 40"/></g>
+        <rect x="30" y="300" width="340" height="26" fill="#1E3A31"/>
+        <path d="M70 160h260v70c0 56-52 92-130 92S70 286 70 230z" fill="#F2E8D8"/>
+        <path d="M330 184h24c26 0 38 18 34 36-4 20-24 34-58 34" fill="none" stroke="#F2E8D8" stroke-width="16"/>
+        <ellipse cx="200" cy="160" rx="130" ry="26" fill="#3A2113"/>
+        <ellipse cx="200" cy="158" rx="104" ry="17" fill="#7A4A2B"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="brew" class="pad">
+  <div class="wrap">
+    <h2 class="h2">Dial in your brew in ten seconds</h2>
+    <p class="lead">Pick a method, choose how much you're making, and get exact weights and a simple routine.</p>
+    <div class="brew-box">
+      <div>
+        <div class="field"><span class="lab" id="mLab">Method</span><div class="seg" id="methods" role="group" aria-labelledby="mLab"></div></div>
+        <div class="field"><label for="cups" id="cupsLab">Cups</label><div class="rng"><input type="range" id="cups" min="1" max="8" value="2"><output id="cupsOut" for="cups">2</output></div></div>
+        <div class="field"><span class="lab" id="sLab">Strength</span><div class="seg" id="strength" role="group" aria-labelledby="sLab"></div></div>
+        <p class="note" id="bnote"></p>
+      </div>
+      <div class="res" aria-live="polite">
+        <div class="res-top">
+          <div class="glass" aria-hidden="true"><i id="lvl"></i></div>
+          <div class="nums"><div><b id="rCoffee">–</b><span>grams of coffee</span></div><div><b id="rWater">–</b><span>ml of water</span></div></div>
+        </div>
+        <div class="specs"><div><span>Grind</span><b id="rGrind"></b></div><div><span>Water temp</span><b id="rTemp"></b></div><div><span>Brew time</span><b id="rTime"></b></div></div>
+        <ol class="steps" id="rSteps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="shop-head">
+      <div><h2 class="h2">This week's roast</h2><p class="lead">Beans are 250 g. Free shipping over $35.</p></div>
+      <div class="seg" id="filters" role="group" aria-label="Filter products"></div>
+    </div>
+    <div class="grid-p" id="products"></div>
+  </div>
+</section>
+
+<section class="join pad" id="join">
+  <div class="wrap">
+    <h2 class="h2">Get the Tuesday list</h2>
+    <p class="lead">One short email when the new roast is out. First dibs on small lots.</p>
+    <form class="sub-form" id="subForm" novalidate>
+      <label for="email" style="position:absolute;left:-9999px">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+      <button class="btn" type="submit">Join the list</button>
+    </form>
+    <p class="msg" id="msg" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a class="logo" href="#home"><svg aria-hidden="true" style="color:#F2A65A"><use href="#sun"/></svg>Daybreak</a><p style="margin-top:12px;max-width:34ch">Small-lot coffee for people who like mornings better with a good cup.</p></div>
+      <nav aria-label="Footer"><a href="#origins">Origins</a><a href="#story">Roastery</a><a href="#brew">Brew guide</a><a href="#shop">Shop</a></nav>
+    </div>
+    <p class="small">© 2026 Daybreak Coffee Co. A demo storefront: no payments are taken and no data is sent.</p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" inert>
+  <div class="d-head"><h2>Your cart</h2><button class="x" id="closeCart" aria-label="Close cart">×</button></div>
+  <ul class="d-list" id="dList"></ul>
+  <div class="d-foot">
+    <div class="sum"><span>Subtotal</span><span id="dSum">$0.00</span></div>
+    <button class="btn btn-primary" id="checkout">Place demo order</button>
+    <small>Demo store: no payment is taken.</small>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
